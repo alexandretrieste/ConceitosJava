@@ -1,15 +1,6 @@
 public final class Endereco {
-    private int num = 0;
     private String rua = "";
-    private ClienteBanco clienteBanco;
-
-    public int getNum() {
-        return num;
-    }
-
-    public void setNum(int num) {
-        this.num = num;
-    }
+    private int num = 0;
 
     public String getRua() {
         return rua;
@@ -17,5 +8,13 @@ public final class Endereco {
 
     public void setRua(String rua) {
         this.rua = rua;
+    }
+
+    public int getNum() {
+        return num;
+    }
+
+    public void setNum(int num) {
+        this.num = num;
     }
 }

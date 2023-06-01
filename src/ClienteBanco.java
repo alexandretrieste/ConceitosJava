@@ -1,9 +1,9 @@
 public abstract class ClienteBanco implements Verifica {
     private int numeroConta = 0;
     private String nome = "";
-    private String endr;
+    private Endereco endr = new Endereco();
 
-    public abstract void verificaDoc();
+    public abstract void verifDoc();
 
     public int getNumeroConta() {
         return numeroConta;
@@ -26,11 +26,11 @@ public abstract class ClienteBanco implements Verifica {
         this.nome = nome;
     }
 
-    public String getEndr() {
+    public Endereco getEndr() {
         return endr;
     }
 
-    public void setEndr(String endr) {
+    public void setEndr(Endereco endr) {
         this.endr = endr;
     }
 

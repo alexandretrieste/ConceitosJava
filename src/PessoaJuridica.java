@@ -3,13 +3,11 @@ public class PessoaJuridica extends ClienteBanco{
     private PessoaFisica responsavel = new PessoaFisica();
 
     @Override
-    public void verificaDoc() {
-        if (getNome().length()>30){
+    public void verifDoc() {
+        if (getResponsavel().getNome().length()>30){
             System.out.println("Nome do responsável inválido");
         }else {
             System.out.println("Nome do Responsável Válido");
-
-
         }
     }
 

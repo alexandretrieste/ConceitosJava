@@ -1,4 +1,3 @@
 public interface Verifica {
-    default void validar(){
-    }
+    public void validar();
 }
